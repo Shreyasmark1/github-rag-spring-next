@@ -1,0 +1,67 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Explicitly declare text files to be normalized to LF on checkout/commit
+*.java text eol=lf
+*.kt text eol=lf
+*.properties text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.xml text eol=lf
+*.gradle text eol=lf
+*.gradle.kts text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.html text eol=lf
+*.sql text eol=lf
+*.sh text eol=lf
+
+# Shell scripts should have LF endings on all platforms
+*.sh text eol=lf
+
+# Batch files should have CRLF endings on Windows
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# PowerShell scripts should have CRLF endings on Windows
+*.ps1 text eol=crlf
+
+# Environment files - normalize to LF
+.env* text eol=lf
+
+# Config files - normalize to LF
+*.config text eol=lf
+*.conf text eol=lf
+*.ini text eol=lf
+
+# Binary files - do not modify line endings
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.pdf binary
+*.zip binary
+*.jar binary
+*.class binary
+*.pem binary
+
+# Package lock files - normalize to LF
+package-lock.json text eol=lf
+yarn.lock text eol=lf
+pnpm-lock.yaml text eol=lf
+
+# Gradle wrapper
+gradlew text eol=lf
+gradlew.bat text eol=crlf
